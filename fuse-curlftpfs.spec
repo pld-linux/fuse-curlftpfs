@@ -1,6 +1,6 @@
 %define		_name	curlftpfs
 Summary:	A filesystem for accessing FTP sites
-Summary(pl):	System plików CurlFtpFS
+Summary(pl.UTF-8):	System plikÃ³w CurlFtpFS
 Name:		fuse-curlftpfs
 Version:	0.9
 Release:	1
@@ -16,17 +16,16 @@ BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A filesystem for accessing FTP sites.
-You can "mount" FTP shared directories in your very personal file system
-and take advantage of local files ops.
-It's based on libcurl and automatically reconnects when the server times out.
+A filesystem for accessing FTP sites. You can "mount" FTP shared
+directories in your very personal file system and take advantage of
+local files ops. It's based on libcurl and automatically reconnects
+when the server times out.
 
-%description -l pl
-System plików CurlFtpFS.
-Dziêki niemu mo¿esz podmontowaæ katalogi FTP do swojego systemu plików
-i korzystaæ z nich jak z plików lokalnych.
+%description -l pl.UTF-8
+System plikÃ³w CurlFtpFS. DziÄ™ki niemu moÅ¼esz podmontowaÄ‡ katalogi FTP
+do swojego systemu plikÃ³w i korzystaÄ‡ z nich jak z plikÃ³w lokalnych.
 Bazuje na blibliotece libcurl, wspiera SSL i automatyczne odnawianie
-po³±czenia.
+poÅ‚Ä…czenia.
 
 %prep
 %setup -q -n %{_name}-%{version}
