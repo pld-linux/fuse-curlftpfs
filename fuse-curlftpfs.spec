@@ -1,6 +1,6 @@
 %define		_name	curlftpfs
-Summary:	Filesystem based on CVS
-Summary(pl):	System plików oparty na CVS-ie
+Summary:	A filesystem for accessing FTP sites
+Summary(pl):	System plików CurlFtpFS
 Name:		fuse-curlftpfs
 Version:	0.9
 Release:	1
