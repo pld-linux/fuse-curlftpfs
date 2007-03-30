@@ -1,6 +1,6 @@
 %define		_name	curlftpfs
 Summary:	A filesystem for accessing FTP sites
-Summary(pl.UTF-8):	System plików CurlFtpFS
+Summary(pl.UTF-8):	System plików pozwalający na dostęp do serwerów FTP
 Name:		fuse-curlftpfs
 Version:	0.9
 Release:	1
@@ -22,9 +22,9 @@ local files ops. It's based on libcurl and automatically reconnects
 when the server times out.
 
 %description -l pl.UTF-8
-System plików CurlFtpFS. Dzięki niemu możesz podmontować katalogi FTP
+System plików CurlFtpFS. Dzięki niemu można podmontować katalogi FTP
 do swojego systemu plików i korzystać z nich jak z plików lokalnych.
-Bazuje na blibliotece libcurl, wspiera SSL i automatyczne odnawianie
+Bazuje na blibliotece libcurl, obsługuje SSL i automatyczne odnawianie
 połączenia.
 
 %prep
