@@ -2,12 +2,12 @@
 Summary:	A filesystem for accessing FTP sites
 Summary(pl):	System plików CurlFtpFS
 Name:		fuse-curlftpfs
-Version:	0.9
+Version:	0.9.1
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/curlftpfs/%{_name}-%{version}.tar.gz
-# Source0-md5:	7e29eb1963d4023bb7ea530a1b4274c4
+# Source0-md5:	969998e9cf1663824f44739e94c703a1
 URL:		http://curlftpfs.sourceforge.net/
 BuildRequires:	curl-devel >= 7.15.2
 BuildRequires:	glib2-devel
