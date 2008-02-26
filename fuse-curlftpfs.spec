@@ -3,7 +3,7 @@ Summary:	A filesystem for accessing FTP sites
 Summary(pl.UTF-8):	System plików pozwalający na dostęp do serwerów FTP
 Name:		fuse-curlftpfs
 Version:	0.9.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/curlftpfs/%{_name}-%{version}.tar.gz
