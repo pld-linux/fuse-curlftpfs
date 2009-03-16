@@ -13,6 +13,7 @@ BuildRequires:	curl-devel >= 7.15.2
 BuildRequires:	glib2-devel
 BuildRequires:	libfuse-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
