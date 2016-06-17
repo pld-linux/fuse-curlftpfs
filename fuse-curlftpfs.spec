@@ -1,19 +1,20 @@
-%define		_name	curlftpfs
 Summary:	A filesystem for accessing FTP sites
 Summary(pl.UTF-8):	System plików pozwalający na dostęp do serwerów FTP
 Name:		fuse-curlftpfs
-Version:	0.9.1
-Release:	2
+Version:	0.9.2
+Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	http://dl.sourceforge.net/curlftpfs/%{_name}-%{version}.tar.gz
-# Source0-md5:	969998e9cf1663824f44739e94c703a1
+Source0:	http://downloads.sourceforge.net/curlftpfs/curlftpfs-%{version}.tar.gz
+# Source0-md5:	b452123f755114cd4461d56c648d9f12
 URL:		http://curlftpfs.sourceforge.net/
-BuildRequires:	curl-devel >= 7.15.2
-BuildRequires:	glib2-devel
-BuildRequires:	libfuse-devel
+BuildRequires:	curl-devel >= 7.17.0
+BuildRequires:	glib2-devel >= 2.0
+BuildRequires:	libfuse-devel >= 2.2
 BuildRequires:	libstdc++-devel
 BuildRequires:	pkgconfig
+Requires:	curl-libs >= 7.17.0
+Requires:	libfuse >= 2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,7 +30,7 @@ Bazuje na blibliotece libcurl, obsługuje SSL i automatyczne odnawianie
 połączenia.
 
 %prep
-%setup -q -n %{_name}-%{version}
+%setup -q -n curlftpfs-%{version}
 
 %build
 %configure
@@ -48,6 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/curlftpfs
 %{_mandir}/man1/curlftpfs.1*
